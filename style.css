@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600&display=swap");
+:root {
+  --color-bg: rgb(139, 96, 182);
+  --color-bg-hover: rgb(126, 67, 185);
+  --color-bg-container: #e4e4e4;
+  --color-font: rgb(54, 54, 54);
+  --color-font2: rgb(119, 119, 119);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+  padding: 0;
+}
+body {
+  background-color: var(--color-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  background-color: var(--color-bg-container);
+  width: 80%;
+  border-radius: 10px;
+  padding: 80px 60px;
+  box-shadow: 0 20px 40px rgba(92, 91, 91, 0.4);
+}
+.search-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.search-box input {
+  all: unset;
+  border-bottom: 3px solid var(--color-bg);
+  width: 70%;
+  padding: 5px 10px;
+  font-size: 30px;
+}
+.search-box .search-btn {
+  all: unset;
+  padding: 15px;
+  margin-left: 20px;
+  background-color: var(--color-bg);
+  border-radius: 6px;
+  cursor: pointer;
+  width: 200px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--color-bg-container);
+}
+.search-box .search-btn:hover {
+  background-color: var(--color-bg-hover);
+}
+
+.result {
+  margin: 75px 30px;
+}
+.word {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.word button i {
+  font-size: 40px;
+  color: var(--color-bg);
+  border: none;
+  outline: none;
+}
+.word button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.word h3 {
+  font-size: 40px;
+  color: var(--color-font);
+  letter-spacing: 1px;
+}
+.result .details {
+  display: flex;
+  gap: 10px;
+  margin: 6px 0 20px 0;
+  font-size: 16px;
+  color: var(--color-font2);
+}
+.word-meaning {
+  width: 90%;
+  text-indent: 50px;
+  line-height: 35px;
+  font-size: 24px;
+  color: var(--color-font);
+}
+.result .example {
+  margin-top: 30px;
+  color: var(--color-font);
+  font-style: italic;
+}
+.result .example span {
+  color: var(--color-bg);
+  font-size: 20px;
+}
+.result .example p {
+  margin-top: 20px;
+  /* text-indent: 60px; */
+  border-left: 5px solid var(--color-bg);
+  padding: 20px 50px;
+}
